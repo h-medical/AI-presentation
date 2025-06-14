@@ -120,6 +120,15 @@
 
     <main id="slider-container" class="slider-container">
         
+        <section id="slide0" class="slide">
+            <div class="text-center">
+                 <h1 class="text-7xl font-bold mb-4" style="text-shadow: 3px 3px 15px rgba(0,0,0,0.15);">
+                    <span class="text-gradient">AIメディカルチェッカー</span>
+                </h1>
+                <p class="text-2xl text-gray-600 mt-8">株式会社博報堂メディカル</p>
+            </div>
+        </section>
+
         <section id="slide1" class="slide">
             <p class="text-lg md:text-xl text-gray-600 mb-4">メディカル審査に関わる皆様、</p>
             <h1 id="main-title" class="text-5xl md:text-7xl font-black mb-4 leading-tight"></h1>
@@ -133,17 +142,18 @@
                     <div class="card">
                         <div class="text-7xl font-black text-[#003f5c] mb-3">200+</div>
                         <h3 class="text-xl font-bold mb-2">膨大なチェック項目</h3>
-                        <p class="text-gray-500">遵守項目は改訂ごとに増加。<br>抜け漏れリスクと常に隣り合わせ。</p>
+                        <p class="text-base text-gray-500">遵守項目は改訂ごとに増加。<br>抜け漏れリスクと常に隣り合わせ。</p>
                     </div>
                     <div class="card">
                         <div class="text-7xl font-black text-[#7a5195] mb-3">40%</div>
                         <h3 class="text-xl font-bold mb-2">業務に占めるチェック時間</h3>
-                        <p class="text-gray-500">本来注力すべき価値創造的な業務の時間が奪われている。</p>
+                        <p class="text-base text-gray-500">本来注力すべき価値創造的な業務の時間が奪われている。</p>
+                        <p class="text-xs text-gray-400 mt-2">博報堂メディカル社内調査：メディカルライタ―の労働時間内訳より</p>
                     </div>
                     <div class="card">
                         <div class="text-7xl font-black text-[#ef5675] mb-3">属人化</div>
                         <h3 class="text-xl font-bold mb-2">判断基準のばらつき</h3>
-                        <p class="text-gray-500">個人の経験や解釈に依存し、手戻りが頻発。</p>
+                        <p class="text-base text-gray-500">個人の経験や解釈に依存し、手戻りが頻発。</p>
                     </div>
                 </div>
             </div>
@@ -184,7 +194,7 @@
                 <p class="text-lg text-gray-300 mb-8">体系化されたアルゴリズムにより、AIが瞬時にチェックを完了。<br>人間は、より高度な判断業務に集中できます。</p>
                 <div class="flex items-center justify-center">
                     <span class="text-xl md:text-2xl text-gray-400 line-through">従来 5営業日</span>
-                    <span class="text-3xl md:text-4xl font-bold mx-4 text-amber-400">→</span>
+                    <span class="text-3xl font-bold mx-4 text-amber-400">→</span>
                     <div class="inline-block transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer">
                         <span class="text-4xl md:text-6xl font-black text-amber-400">約30<span class="text-2xl md:text-4xl ml-2">分</span></span>
                     </div>
@@ -199,17 +209,17 @@
                      <div class="card">
                         <div class="text-6xl mb-4">🛡️</div>
                         <h3 class="text-xl font-bold mb-2">コンプライアンス強化</h3>
-                        <p class="text-gray-500">AIによる網羅的なチェックで、規制違反のリスクを大幅に低減。</p>
+                        <p class="text-base text-gray-500">AIによる網羅的なチェックで、規制違反のリスクを大幅に低減。</p>
                     </div>
                     <div class="card">
                         <div class="text-6xl mb-4">💡</div>
                         <h3 class="text-xl font-bold mb-2">価値創造への集中</h3>
-                        <p class="text-gray-500">時間のかかる確認作業から、創造的な業務へ人的リソースを集中。</p>
+                        <p class="text-base text-gray-500">時間のかかる確認作業から、創造的な業務へ人的リソースを集中。</p>
                     </div>
                     <div class="card">
                         <div class="text-6xl mb-4">⚖️</div>
                         <h3 class="text-xl font-bold mb-2">審査基準の標準化</h3>
-                        <p class="text-gray-500">属人化していた判断基準の大部分を、AIアルゴリズムで標準化。</p>
+                        <p class="text-base text-gray-500">属人化していた判断基準の大部分を、AIアルゴリズムで標準化。</p>
                     </div>
                 </div>
                 <p id="cta-text" class="text-xl md:text-2xl text-gray-700 font-semibold cursor-pointer">
@@ -226,7 +236,7 @@
     <div id="nextBtn" class="nav-arrow">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
     </div>
-    <div id="slide-counter">1 / 6</div>
+    <div id="slide-counter">1 / 7</div>
 
     <script type="module">
         import * as THREE from 'three';
@@ -237,7 +247,7 @@
             const prevBtn = document.getElementById('prevBtn');
             const nextBtn = document.getElementById('nextBtn');
             const slideCounter = document.getElementById('slide-counter');
-            const totalSlides = 6;
+            const totalSlides = 7;
 
             function updateNav(currentIndex) {
                 slideCounter.textContent = `${currentIndex + 1} / ${totalSlides}`;
